@@ -12,6 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
 
+      - name: Setup .NET 9
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
       - name: Make upload directory
         run: mkdir upload
 
@@ -48,6 +53,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
 
+      - name: Setup .NET 9
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
       - name: Make upload directory
         run: mkdir upload
 
@@ -69,6 +79,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
 
+      - name: Setup .NET 9
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+          
       - name: CD Android
         run: cd ./AvaloniaTool.Android
 
@@ -76,7 +91,7 @@ jobs:
         run: dotnet restore
 
       - name: Publish Android
-        run: dotnet publish AvaloniaTool.Android -c Release -f net8.0-android --no-restore -o ./publish
+        run: dotnet publish AvaloniaTool.Android -c Release -f net9.0-android --no-restore -o ./publish
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.1

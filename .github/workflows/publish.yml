@@ -103,10 +103,34 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.1
 
+      - name: Download Android Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: android
+          path: ./upload
+
+      - name: Download Windows Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: windows
+          path: ./upload
+
+      - name: Download Linux Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: linux
+          path: ./upload
+
+      - name: Upload release artifacts
+        uses: actions/upload-artifact@v4.3.1
+        with:
+          name: release-artifacts
+          path: ./upload/**/*
+  
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: ./upload/**/*.zip
+          files: ./upload/**/*.{zip,apk,nupkg}
           tag_name: v${{ github.sha }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,4 +1,4 @@
-name: Publish
+name: Publish and Release
 
 on:
   push:
@@ -65,7 +65,7 @@ jobs:
         run: dotnet publish AvaloniaTool.Desktop -r linux-x64 -c Release --sc /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true -o ./publish/linux64
 
       - name: Zip linux-x64
-        run: zip -j -r ./upload/AvaloniaTool.Desktop.linux-x64.zip ./publish/linux64 -x "*.pdb"
+        run: zip -r ./upload/AvaloniaTool.Desktop.linux-x64.zip ./publish/linux64 -x "*.pdb"
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.1
@@ -83,12 +83,9 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 9.0.x
-          
-      - name: CD Android
-        run: cd ./AvaloniaTool.Android
 
       - name: Restore Dependencies
-        run: dotnet restore
+        run: dotnet restore AvaloniaTool.Android
 
       - name: Publish Android
         run: dotnet publish AvaloniaTool.Android -c Release -f net9.0-android --no-restore -o ./publish
@@ -98,3 +95,18 @@ jobs:
         with:
           name: android
           path: ./publish/*Signed.apk
+
+  release:
+    runs-on: ubuntu-latest
+    needs: [windows, linux, android]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.1
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./upload/**/*.zip
+          tag_name: v${{ github.sha }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

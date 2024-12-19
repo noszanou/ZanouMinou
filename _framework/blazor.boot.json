@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AvaloniaTool.Browser",
   "resources": {
-    "hash": "sha256-j31CYTQSynkXwwC4sLWal8zLfpk0z66bmd/SJfGTPyw=",
+    "hash": "sha256-+s29cyFX0gziO2xO2lgYx/VE4VwPns5QIh6vB9MF0KI=",
     "fingerprinting": {
       "Avalonia.Base.9lbe5dimqd.wasm": "Avalonia.Base.wasm",
       "Avalonia.Browser.jd6lo36v9a.wasm": "Avalonia.Browser.wasm",
@@ -15,8 +15,8 @@
       "Avalonia.Skia.04o3lj3n6m.wasm": "Avalonia.Skia.wasm",
       "Avalonia.Themes.Fluent.oolxhtcoqz.wasm": "Avalonia.Themes.Fluent.wasm",
       "Avalonia.Vulkan.bv1k9ftjw5.wasm": "Avalonia.Vulkan.wasm",
-      "AvaloniaTool.Browser.1y8nm1y3kh.wasm": "AvaloniaTool.Browser.wasm",
-      "AvaloniaTool.ynxqzb6d3y.wasm": "AvaloniaTool.wasm",
+      "AvaloniaTool.Browser.3xnarr419b.wasm": "AvaloniaTool.Browser.wasm",
+      "AvaloniaTool.u8zotstf4x.wasm": "AvaloniaTool.wasm",
       "CommunityToolkit.Mvvm.tlmu9h0jnt.wasm": "CommunityToolkit.Mvvm.wasm",
       "HarfBuzzSharp.eb93b9dgh0.wasm": "HarfBuzzSharp.wasm",
       "SkiaSharp.4rb0w80m4a.wasm": "SkiaSharp.wasm",
@@ -74,8 +74,8 @@
       "Avalonia.Skia.04o3lj3n6m.wasm": "sha256-MBImmeX7gJH16x4G8LY9TxWrKxaEKpOjzn53j1158YQ=",
       "Avalonia.Themes.Fluent.oolxhtcoqz.wasm": "sha256-CPFwGu5q4ZobQTmO/FEjVxOC+3qAihKzsx+FGg8zghY=",
       "Avalonia.Vulkan.bv1k9ftjw5.wasm": "sha256-ieRDwObyb+7bJBMBF1R0BwZ9OyNkcJYVlIG6nZXMSUg=",
-      "AvaloniaTool.Browser.1y8nm1y3kh.wasm": "sha256-9xhuSp6rcs665VLloEqWJfnHiCs1niHTk1gz/zE7leU=",
-      "AvaloniaTool.ynxqzb6d3y.wasm": "sha256-EiRoH33F467DxMHN1o9NhFx5aMvOVoHlxwjHpqCs8eg=",
+      "AvaloniaTool.Browser.3xnarr419b.wasm": "sha256-aaHFEEDaAy/kYeEcpR+9iyWFXJwPyvFxuUlCOhmUSZc=",
+      "AvaloniaTool.u8zotstf4x.wasm": "sha256-knoqmQi3PlDJKkWAjfzeqJP8Q1OFy8wSTpTKU3IfOII=",
       "CommunityToolkit.Mvvm.tlmu9h0jnt.wasm": "sha256-8Rpbp0knYg8jkt2sij48qwD9n1jUHN7MhgKxsYsqpvI=",
       "HarfBuzzSharp.eb93b9dgh0.wasm": "sha256-Fi+reSTXMz21jjvNnWXnxvUiuWXP3NuhWdlX88ggV+s=",
       "SkiaSharp.4rb0w80m4a.wasm": "sha256-gAThwusKUhqhrqsVuGd/WqES3O1kq4Qa+nAWVJslph8=",

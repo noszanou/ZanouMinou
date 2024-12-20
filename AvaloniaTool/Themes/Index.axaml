@@ -1,0 +1,21 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<StyleInclude Source="avares://Avalonia.Themes.Simple/SimpleTheme.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/TextBlockStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/ButtonStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/TextBoxStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/BorderStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/TabControlStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/ComboBoxStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/ProgressBarStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/ListBoxStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/ExpanderStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/TreeViewStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/CalendarStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/MenuStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/CheckBoxStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/RadioButtonStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/ToggleButtonStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/SliderStyles.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/NumericUpDownStyles.axaml"/>
+</Styles>

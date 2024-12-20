@@ -1,0 +1,26 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Design.PreviewWith>
+		<Border Padding="20">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="10" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="10" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Button Grid.Column="0"
+						Content="Enabled button" />
+				<Button Grid.Column="2"
+						IsEnabled="False"
+						Content="Disabled one" />
+				<Button Grid.Column="4"
+						Classes="Primary"
+						Content="Primary button" />
+			</Grid>
+		</Border>
+	</Design.PreviewWith>
+	<StyleInclude Source="avares://AvaloniaTool/Themes/Index.axaml"/>
+	<StyleInclude Source="avares://AvaloniaTool/Palettes/RustPalette.axaml"/>
+</Styles>
